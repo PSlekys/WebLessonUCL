@@ -17,16 +17,16 @@
 
 		<h2>Previous &amp; future talks</h2>
 		<p>
-			After the previous lectures by <a href="https://twitter.com/lakatos88">Alex Lakatos</a>, <a href="https://twitter.com/Teoli2003">Jean-Yves Perrier</a> and of course <a href="https://www.ucl.ac.uk/dis/people/stepanyan">Dr. Karen Stepanyan</a> you should be confident with:
+			After the previous lectures by <a href="https://twitter.com/lakatos88">Alex Lakatos</a>, <a href="https://twitter.com/Teoli2003">Jean-Yves Perrier</a> and <a href="https://www.ucl.ac.uk/dis/people/stepanyan">Dr. Karen Stepanyan</a> you should be confident with:
 			<ul>
 				<li>
-					Fundamentals of HTML/CSS;
+					The fundamentals of HTML/CSS;
 				</li>
 				<li>
 					Firefox Developer tools.
 				</li>
 			</ul>
-			This knowlegde will come in handy when preparing for future lectures, courseworks and exams. The main objective of today's talk is to quickly display the process of launching a simple website individually and comparing this to the processes a large organisation would undertake to launch a system. Most of the steps that we go over today will be taught (or were already taught) in more detail later in the course.
+			This knowlegde will come in handy when preparing for future lectures, courseworks and exams. The main objective of today's talk is to quickly display the process of launching a simple website individually and comparing this to the processes a large organisation would undertake to launch a new system. Most of the steps that we go over today will be taught (or were already taught) in more detail later in the course.
 		</p>
 		
 		<h2>Getting started</h2>
@@ -51,7 +51,8 @@
 		
 		<h2>Design a website</h2>
 		<p>
-			Before we start writting the code, we need to think about how the system will work and how should it look like to maximise consumer satisfaction. This involves considering User Interface (UI) and User Experience (UX).
+			Before we start writting the code, we need to think about how the system will work and how it should look like to maximise consumer satisfaction. This involves considering User Interface (UI) and User Experience (UX). 
+			<!-- The lesson on UI/UX best practices and frameworks is available <a href="#">here</a> -->
 		</p>
 		<p>
 			We will use <a href="http://moqups.com/">Moqups</a> to put our thoughts down and wireframe the website. They will provide every UCL student with a basic account for free, just enter your email <a href="https://goo.gl/forms/YxPHNOnqiKjB0MtP2">here</a> for an upgrade (you must already have an account there).
@@ -63,17 +64,36 @@
 		
 		<h2>Build a website</h2>
 		<p>
-			Now that we know exactly how the website should be structured, let's start writing HTML/CSS and make it a website. If you struggle and do not know how to begin, check <a href="#">this Github page</a>, where I uploaded a template of a website with plenty of comments.
+			Now that we know exactly how the website should be structured, let's start writing HTML/CSS and make it a website. If you struggle (forgot what HTML or some elements mean - I_Forgot_Everything), don't know where to start or too lazy to begin HTML, check <a href="https://github.com/PSlekys/WebLessonUCL/tree/master/WebsiteTemplates">this Github page</a>, where I wrote templates of a website for people with different levels of knowledge.
 		</p>
 		
 		<h2>Setup a server</h2>
 		<p>
+			Now that we have a website, we want it to be on the internet, not only on our computers. For this, we want to setup a server, which is a very powerful computer or even multiple computers.
+			Let's create a VM (Virtual Machine) on Microsoft Azure and connect to it using <a href="http://www.putty.org/">Putty</a> (if Windows user) or through terminal for Mac and Linux:
+			
 			<code>
-				sudo apt-get update
+				ssh username@IPaddress
+			</code>
+		</p>
+		
+		<p>
+			Now we want to install software on the server, which will host the website. The two main providers are <a src="https://www.apache.org/">Apache</a> and <a src="https://www.nginx.com/">Nginx</a>. In this tutorial we will be using Apache.
+			First, let's update our server's packages. (sudo means granting root access - like 'run as administrator')
+			<code>
+				sudo apt-get update<br />
 				sudo apt-get upgrade
 			</code>
 		</p>
 		
+		<p>
+			Install Apache
+			<code>
+				sudo apt-get install apache2
+			</code>
+			Yes, now we have a running server! To access the default server website, go to http://IPaddress
+		</p>
+
 		<h2>Upload website to a server</h2>
 		<p>
 			Filezilla
