@@ -1,0 +1,78 @@
+<!-- Hello, I will be your assistant when writing HTML and CSS code -->
+<!-- I speak in comments to tell you what certain lines mean -->
+<!-- So, now that it is obvious how a comment looks like, let's look at HTML! -->
+<!DOCTYPE HTML> <!-- We are telling the browser that we are using HTML5 -->
+<html> <!-- This tells the browser where HTML code begins -->
+	<head> <!-- This element opens the head of the website and shows all the thoughts it contains - none that are directly visible in the website (e.g. the author, the charset or other files) -->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> <!-- Let's tell the browser that we are using UTF-8 charset, it is the standard of HTML5 and ensures that all characters are displayed correctly-->
+		
+		<title>Website Template for UCL students</title> <!-- We tell the browser what title this page has - it will be displayed in the browser's toolbar, search engine (e.g. Google) and in case you bookmark it -->
+
+		<link rel="stylesheet" type="text/css" href="style.css"> <!-- This line indicates to the browser that the style file (CSS) is stored in the same folder and called style.css -->
+	</head> <!-- We are closing the thoughts of the website (as you can see, we close pretty much every HTML element) -->
+	
+	<body> <!-- This line tells the browser where content begins. Almost everything in the body tags will be visible to the user -->
+		<h1>
+			This is a heading! There are 6 heading elements: h1, h2, h3, h4, h5 and h6 - where h1 has the highest importance and h6 has the lowest.
+		</h1>
+	
+		<p>
+			This is text in a paragraph! Paragraphs are block elements, whereas <span>span</span> is an inline-element. 
+			Imagine a block as a box, whereas an inline-element like a plastic bag - we can build various structures by putting a box on a box, whereas plastic bags either wrap-up content or sit next to each other. 
+			Best way to figure out how they work is to play around with them!
+		</p>
+		
+		<div>
+			This is a section of the website - it also is a block element. Most websites contain many of these to create a solid structure. 
+		</div>
+		
+		<p>
+			Let's talk about a few inline elements. I am putting them in a paragraph to ensure that they are in a structured place rather than running around the website. 
+			You can quickly notice that inline elements are displayed next to each other, rather than below each other (like blocks).
+			<a href="https://google.com">For example, this is a link to Google!</a> and this is an image: <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_120x44dp.png" alt="Google logo"/>
+		</p>
+	
+		<div id="my-div-element">
+			Yet another 'div' element. Just, I want this to be pink. So how could you differentiate this from the one above? Use class or id tags.
+		</div>
+		
+		<div class="div-with-a-class">
+			The main difference is that a class tag is mainly used in more than one element (if you want to apply the same style to many elements), whereas an id is to one element (e.g. only one div).
+		</div>
+		<div class="div-with-a-class">
+			The main difference is that a class tag is mainly used in more than one element (if you want to apply the same style to many elements), whereas an id is to one element (e.g. only one div).
+		</div>
+		<div class="div-with-a-class">
+			The main difference is that a class tag is mainly used in more than one element (if you want to apply the same style to many elements), whereas an id is to one element (e.g. only one div).
+		</div>
+		
+		<table> <!-- We tell the browser that this is where a table begins -->
+			<tr> <!-- This an element to start a row -->
+				<th> <!-- This is an element to represent a HEADER cell (where you write the title of the column) -->
+					Heading row - 1st column
+				</th> <!-- and we close it here -->
+				<th>
+					Heading row - 2nd column
+				</th>
+			</tr> <!-- And this indicates where the row ends -->
+			<tr>
+				<td> <!-- This is an element to represent a regular cell -->
+					2nd row - 1st column
+				</td> <!-- and we close it here -->
+				<td>
+					2nd row - 2st column
+				</td>
+			</tr>
+			<tr>
+				<td>
+					3nd row - 1st column
+				</td>
+				<td>
+					3nd row - 2st column
+				</td>
+			</tr>
+		</table> <!-- And the table ends -->
+	</body> <!-- We are telling the browser that we are ending all the content -->
+<html> <!-- This tells the browser where HTML code ends -->
+
+<!-- The terminology in this document used is not official and should not be used in documents (e.g. coursework report). It is here to simplify HTML -->

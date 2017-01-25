@@ -1,0 +1,46 @@
+/* Hi, this is me again! I am in a comment in a css file now. If you have not yet checked the index.html - begin with it */
+/* This CSS file is linked in the index.html file (line 11, to be precise) */
+
+/* CSS is quite easy, we follow a simple structure:
+
+HTMLelement{
+	DeclarationProperty: DeclarationValue;
+}
+
+if we use a class:
+
+HTMLelement.class{
+	DeclarationProperty: DeclarationValue;
+}
+
+if we use an id:
+
+HTMLelement#id{
+	DeclarationProperty: DeclarationValue;
+}
+
+Some examples below: */
+
+h1{
+	font-size: 18px;
+}
+
+p{
+	width: 960px;
+	margin: 0 auto; /* This makes the p element (must have fixed width) to be displayed in the centre */
+}
+
+div#my-div-element{
+	background-color: pink;
+}
+
+div.div-with-a-class{
+	text-decoration: underline;
+	margin: 10px 0;
+}
+
+/* When developing a website, setting borders is useful - it will show where certain elements begin and end - allowing you to style it faster */
+
+h1, p, div, table, td, th{
+	border: 1px solid black;
+}

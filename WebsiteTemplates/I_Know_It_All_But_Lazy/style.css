@@ -1,0 +1,7 @@
+/* Importing Reset CSS to remove any default values */
+@import 'reset.css';
+
+/* OR (accordingly delete the unnecessary file)*/
+
+/* Importing Normalize CSS to normalize the default values of CSS between different browsers */
+@import 'normalize.css';

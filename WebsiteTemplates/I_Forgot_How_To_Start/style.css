@@ -1,0 +1,17 @@
+h1{
+	font-size: 18px;
+}
+
+p{
+	width: 960px;
+	margin: 0 auto;
+}
+
+div#my-div-element{
+	background-color: pink;
+}
+
+div.div-with-a-class{
+	text-decoration: underline;
+	margin: 10px 0;
+}
