@@ -16,3 +16,9 @@ h3 {
 img{
 	max-width: 650px;
 }
+
+code{
+	display: block;
+	padding-left: 20px;
+	border-left: 4px solid rgba(0,0,0, 0.4);
+}
